@@ -1,6 +1,12 @@
+import { useDispatch, useSelector } from "react-redux";
 import "./App.css";
 import Item from "./components/Item";
 import ItemDate from "./components/ItemDate";
+import { decrement, increment } from "./redux/Slice's/counter-slice";
+import MyComponent from "./components/MyComponent";
+import ChildA from "./components/ChildA";
+import { useContext } from "react";
+import { AppContext } from "./context/context";
 
 function App() {
   const response = [
@@ -29,11 +35,25 @@ function App() {
       date: new Date(2021, 5, 5),
     },
   ];
+  const count = useSelector((state) => state.counter.value);
+  const dispatch = useDispatch();
+  const { theme } = useContext(AppContext);
 
   return (
-    <div className="App">
-      <Item ItemName="Nirma"></Item>
-      <ItemDate date="20" month="january" year="2001"></ItemDate>
+    <div
+      className="App"
+      style={{
+        backgroundColor: theme === "light" ? "white" : "black",
+        color: theme === "light" ? "black" : "white",
+      }}
+    >
+      {/* <Item ItemName="Nirma"></Item>
+      <ItemDate date="20" month="january" year="2001"></ItemDate> */}
+      <h1>{count}</h1>
+      <button onClick={() => dispatch(increment())}>Increament</button>
+      <button onClick={() => dispatch(decrement())}>Decreament</button>
+      <MyComponent />
+      <ChildA />
     </div>
   );
 }

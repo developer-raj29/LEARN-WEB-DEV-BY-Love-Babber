@@ -1,0 +1,14 @@
+const mongoose = require('mongoose');
+
+const companySchema = new mongoose.Schema({
+    com_name: { type: String,  },
+    sdate: { type: Date, },
+    edate: { type: Date, },
+    mast_nm: { type: String, },
+    Dealer_miscsno: { type: String, },
+    Q_T_K: { type: String, },
+    masterid: { type: String, },
+    co_code: { type: String, },
+}, { collection: 'companySchema' }); 
+
+module.exports = mongoose.model('companySchema', companySchema);

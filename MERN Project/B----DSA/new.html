@@ -1,0 +1,316 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Journal Voucher</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            /* margin: auto; */
+            padding: 20px;
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+
+        .container {
+            width: 90%;
+            margin: 1.5rem auto;
+            border: 1px solid black;
+            padding: 20px;
+        }
+
+        .header {
+            font-weight: 600;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .footer {
+            font-weight: bold;
+            display: flex;
+            justify-content: flex-end;
+            gap: 200px;
+            padding-right: 30px;
+            margin-top: 20px;
+        }
+
+        .journal-voucher {
+            width: 100%;
+            background-color: #f0f0f0;
+            /* Change to your desired color */
+            padding: 2px;
+            /* Optional: adds some padding around the text */
+            text-align: center;
+            font-weight: bold;
+            font-size: 14px;
+            margin-bottom: 5px;
+            color: #333;
+        }
+
+        .table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 10px;
+        }
+
+        .table,
+        .table th,
+        .table td {
+            border: 1px solid black;
+        }
+
+        .table th,
+        .table td {
+            padding: 8px;
+            text-align: left;
+        }
+
+        #amount {
+            text-align: center;
+        }
+
+        .bottom-row {
+            display: flex;
+            justify-content: space-between;
+            padding: 10px 0px 10px 20px;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="header">
+            <p style="font-size:x-large;">Balaji Marketing</p>
+            <hr>
+            <p style="font-size:larger;" class="journal-voucher">Journal Voucher</p>
+        </div>
+
+        <table style="width:100%; margin-bottom: 15px;">
+
+            <tbody style="display:flex; justify-content: space-between;">
+                <tr>
+                    <td class="with-border">
+                        Voucher No. : JV/1
+                    </td>
+                </tr>
+                <tr style="display:flex; flex-direction: column; align-items: flex-start;">
+                    <td style="text-align: right;">Voucher Date : 12-11-2024</td>
+                    <td style="text-align: right;">Voucher Type : General</td>
+                </tr>
+            </tbody>
+
+        </table>
+
+        <table class="table">
+            <tbody>
+                <tr>
+                    <th>Sno.</th>
+                    <th>Description</th>
+                    <th style="text-align: center;">Debit</th>
+                    <th style="text-align: center;">Credit</th>
+                </tr>
+
+                <tr key="0" style="width: fit-content;">
+                    <td class="with-border">
+                        1
+                    </td>
+                    <td class="with-border">
+                        ABBAS HUSAIN [MP09MZ5001]<br>21ADSFASF FSDF
+                    </td>
+                    <td class="with-border right-align" style="text-align: center;">
+                        122
+                    </td>
+                    <td class="with-border right-align" style="text-align: center;">
+
+                    </td>
+                </tr>
+
+                <tr key="1">
+                    <td class="no-border">
+                        2
+                    </td>
+                    <td class="no-border">
+                        GHANSHYAM [MP09CU4323]<br>ASAFAFD SFSADFSDFS
+                    </td>
+                    <td class="right-align" style="text-align: center;">
+
+                    </td>
+                    <td class="right-align" style="text-align: center;">
+                        222
+                    </td>
+                </tr>
+
+                <tr key="2">
+                    <td class="no-border">
+                        3
+                    </td>
+                    <td class="no-border">
+                        ghanshyam chouhan (bolero)<br>12ASDERR SSDIBS
+                    </td>
+                    <td class="right-align" style="text-align: center;">
+                        100
+                    </td>
+                    <td class="right-align" style="text-align: center;">
+
+                    </td>
+                </tr>
+
+                <tr key="2">
+                    <td class="no-border">
+                        3
+                    </td>
+                    <td class="no-border">
+                        ghanshyam chouhan (bolero)<br>12ASDERR SSDIBS
+                    </td>
+                    <td class="right-align" style="text-align: center;">
+                        100
+                    </td>
+                    <td class="right-align" style="text-align: center;">
+
+                    </td>
+                </tr>
+
+                <tr key="2">
+                    <td class="no-border">
+                        3
+                    </td>
+                    <td class="no-border">
+                        ghanshyam chouhan (bolero)<br>12ASDERR SSDIBS
+                    </td>
+                    <td class="right-align" style="text-align: center;">
+                        100
+                    </td>
+                    <td class="right-align" style="text-align: center;">
+
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+
+        <div class="bottom-row">
+            <p>Rs. Two Hundred Twenty Two Rupees</p>
+            <div style="width: 30%; display: flex; justify-content: space-around; border: 1px;">
+                <strong>222</strong>
+                <strong>222</strong>
+            </div>
+        </div>
+        <hr>
+
+
+        <div class="footer">
+            <p>Authorized Signatory</p>
+            <p>Checked By</p>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="header">
+            <p style="font-size:x-large;">Balaji Marketing</p>
+            <hr>
+            <p style="font-size:larger;" class="journal-voucher">Journal Voucher</p>
+        </div>
+
+        <table style="width:100%; margin-bottom: 15px;">
+
+            <tbody style="display:flex; justify-content: space-between;">
+                <tr>
+                    <td class="with-border">
+                        Voucher No. : JV/2
+                    </td>
+                </tr>
+                <tr style="display:flex; flex-direction: column; align-items: flex-start;">
+                    <td style="text-align: right;">Voucher Date : 12-11-2024</td>
+                    <td style="text-align: right;">Voucher Type : General</td>
+                </tr>
+            </tbody>
+
+        </table>
+
+        <table class="table">
+            <tbody>
+                <tr>
+                    <th>Sno.</th>
+                    <th>Description</th>
+                    <th style="text-align: center;">Debit</th>
+                    <th style="text-align: center;">Credit</th>
+                </tr>
+
+                <tr key="0">
+                    <td class="with-border">
+                        1
+                    </td>
+                    <td class="with-border">
+                        AAYUSH GOUR [I-20]<br>
+                    </td>
+                    <td class="with-border right-align" style="text-align: center;">
+                        1000
+                    </td>
+                    <td class="with-border right-align" style="text-align: center;">
+
+                    </td>
+                </tr>
+
+                <tr key="1">
+                    <td class="no-border">
+                        2
+                    </td>
+                    <td class="no-border">
+                        AAYUSH GOUR [I-20]<br>
+                    </td>
+                    <td class="right-align" style="text-align: center;">
+
+                    </td>
+                    <td class="right-align" style="text-align: center;">
+                        500
+                    </td>
+                </tr>
+
+                <tr key="2">
+                    <td class="no-border">
+                        3
+                    </td>
+                    <td class="no-border">
+                        AAYUSH JOSHI [HONDACITY]<br>
+                    </td>
+                    <td class="right-align" style="text-align: center;">
+
+                    </td>
+                    <td class="right-align" style="text-align: center;">
+                        500
+                    </td>
+                </tr>
+
+            </tbody>
+        </table>
+
+
+        <div class="bottom-row">
+            <p>Rs. One Thousand Rupees</p>
+            <div style="width: 30%; display: flex; justify-content: space-around; border: 1px;">
+                <strong>1000</strong>
+                <strong>1000</strong>
+            </div>
+        </div>
+        <hr>
+
+
+        <div class="footer">
+            <p>Authorized Signatory</p>
+            <p>Checked By</p>
+        </div>
+    </div>
+
+</body>
+
+</html>

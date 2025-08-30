@@ -10,14 +10,14 @@
   height: 100vh;
   padding-top: 5rem;
   font-size: 5rem;
-  background-color: #61dafb;
+  /* background-color: #61dafb; */
 }
 
 .container {
   margin: 3rem auto;
   width: 30%;
   height: 40rem;
-  background-color: yellow;
+  /* background-color: yellow; */
   border-radius: 2rem;
   border: 1px solid black;
 }
